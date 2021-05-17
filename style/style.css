@@ -1,0 +1,65 @@
+header {
+    position: absolute;
+    height: 56px;
+    left: 32px;
+    top: 32px;
+}
+
+#logo-site {
+    position: absolute;
+    width: 145px;
+    height: 34.05px;
+    left: 0px;
+    top: 12px;
+}
+
+#barra-de-pesquisa{
+   display: flex;
+   flex-direction: column;
+   align-items: flex-start;
+   padding: 0px;
+   margin: 0px 344px;
+
+   position: absolute;
+   width: 752px;
+   height: 56px;
+   left: 0px;
+   right: 0px;
+   background: rgba(255, 255, 255, 0.16);
+   border-radius: 8px;
+
+   flex: none;
+   order: 0;
+   align-self: stretch;
+   flex-grow: 0px 0px;
+}
+
+#barra-de-pesquisa::placeholder{
+    padding: 16px 14px 0;
+    font-size: 16px;
+    color: rgba(255, 255, 255, 0.75 );
+}
+
+#nome-usuario{
+    position: absolute;
+    width: 42px;
+    height: 32px;
+    left: 49.06%; 
+    right: 11.32%;
+    top: 28.57%;
+    bottom: 28.57%;
+
+    font-family: Inter;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+    
+    margin: 0px 8px;
+
+}
+
+body {
+    background-color: #051B3D;
+}
