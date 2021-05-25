@@ -6,19 +6,89 @@
     <title>Alura Dev</title>
     <link rel="stylesheet" href="style/reset.css">
     <link rel="stylesheet" href="style/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="topo-da-pagina">
-            <img id="logo-site" src="assets/logo.svg" alt="Alura Dev Logo">
-            <input id="barra-de-pesquisa" type="text" placeholder="Busque por algo">
-            <div class="autor">
-                <img id="foto-perfil" class="autor-item autor-foto" src="assets/foto-perfil.png" alt="Foto do perfil">
-                <p id="nome" class="autor-item autor-nome">Igor</p>
+        <div class="header-bar">
+            <img class="logo" src="assets/logo.svg" alt="Alura Dev Logo">
+            <input class="input-bar" type="text" placeholder="Busque por algo">
+            <div class="author">
+                <img class="author-picture" src="assets/foto-perfil.png" alt="Profile Picture">
+                <p class="author-name">Igor</p>
             </div>
         </div>
     </header>
+    <main>
+        <div class="main-container">
+            <div class="menu">
+                <h3 class="menu-header">Menu</h3>
+                <ul class="table-head">
+                    <li class="menu-item">
+                        <div class="icon-background">
+                            <img class="icon" src="assets/html-symbol.svg" alt="icon-menu">
+                        </div>
+                        <a href="">Editor de código</a>
+                    </li>
+                    <li class="menu-item">
+                        <div class="icon-background">
+                            <img class="icon" src="assets/community-icon.svg" alt="icon-menu">
+                        </div>
+                        <a href="">Comunidade</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="code-area">
+                <div class="border-text-field">
+                    <textarea class="text-field"></textarea>
+                    <div class="dots">
+                        <div class="upper-dot red-dot"
+                            style="background-color: #FF5F56; border-radius: 50%; width: 12px; height: 12px;"></div>
+                        <div class="upper-dot yellow-dot"
+                            style="background-color: #FFBD2E; border-radius: 50%; width: 12px; height: 12px;"></div>
+                        <div class="upper-dot green-dot"
+                            style="background-color: #27C93F; border-radius: 50%; width: 12px; height: 12px;"></div>
+                    </div>
+                </div>
+                <div class="syntax-highlight-button">
+                    <button>Visualizar com highlight</button>
+                </div>
+            </div>
+
+            <div class="project-data">
+                <div class="project-data-fields">
+                    <h3 class="menu-header project">Seu Projeto</h3>
+                    <ul class="project-fields">
+                        <li class="project-item">
+                            <input class="input-field project-name" type="text" placeholder="Nome do seu projeto">
+                        </li>
+                        <li class="project-item">
+                            <input class="input-field project-description" type="text"
+                                placeholder="Descrição do seu projeto">
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="personalize">
+                    <h3 class="menu-header select-title">Personalização</h3>
+                    <select class="select-input">
+                        <option>JavaScript</option>
+                        <option>HTML</option>
+                        <option>CSS</option>
+                    </select>
+                    <input class="input-field color-picker" type="color" value="#6BD1FF">
+                </div>
+
+                <div class="submit-button">
+                    <button>Salvar Projeto</button>
+                </div>
+            </div>
+        </div>
+    </main>
 </body>
 <footer>
 
