@@ -14,7 +14,7 @@
 <body>
     <header>
         <div class="header-bar">
-            <img class="logo" src="assets/logo.svg" alt="Alura Dev Logo">
+            <img class="logo" src="assets/logo.png" alt="Alura Dev Logo">
             <input class="input-bar" type="text" placeholder="Busque por algo">
             <div class="author">
                 <img class="author-picture" src="assets/foto-perfil.png" alt="Profile Picture">
@@ -23,28 +23,23 @@
         </div>
     </header>
     <main>
-        <div class="main-container">
-            <div class="menu">
-                <h3 class="menu-header">Menu</h3>
-                <ul class="table-head">
-                    <li class="menu-item">
-                        <div class="icon-background">
-                            <img class="icon" src="assets/html-symbol.svg" alt="icon-menu">
-                        </div>
-                        <a href="">Editor de código</a>
-                    </li>
-                    <li class="menu-item">
-                        <div class="icon-background">
-                            <img class="icon" src="assets/community-icon.svg" alt="icon-menu">
-                        </div>
-                        <a href="">Comunidade</a>
-                    </li>
-                </ul>
-            </div>
+        <div class="menu">
+            <h3 class="menu-header">Menu</h3>
+            <ul class="table-head">
+                <li class="menu-item">
+                    <img class="icon" src="assets/html-symbol.svg" alt="icon-menu">
+                    <a href="">Editor de código</a>
+                </li>
+                <li class="menu-item">
+                    <img class="icon" src="assets/community-icon.svg" alt="icon-menu">
+                    <a href="">Comunidade</a>
+                </li>
+            </ul>
+        </div>
 
-            <div class="code-area">
-                <div class="border-text-field">
-                    <textarea class="text-field"></textarea>
+        <div class="code-area">
+            <div class="border-text-field">
+                <div class="code-editor-background">
                     <div class="dots">
                         <div class="upper-dot red-dot"
                             style="background-color: #FF5F56; border-radius: 50%; width: 12px; height: 12px;"></div>
@@ -53,39 +48,42 @@
                         <div class="upper-dot green-dot"
                             style="background-color: #27C93F; border-radius: 50%; width: 12px; height: 12px;"></div>
                     </div>
-                </div>
-                <div class="syntax-highlight-button">
-                    <button>Visualizar com highlight</button>
+                    <textarea class="text-field"></textarea>
                 </div>
             </div>
+            <div class="syntax-highlight-button">
+                <button>Visualizar com highlight</button>
+            </div>
+        </div>
 
-            <div class="project-data">
-                <div class="project-data-fields">
-                    <h3 class="menu-header project">Seu Projeto</h3>
-                    <ul class="project-fields">
-                        <li class="project-item">
-                            <input class="input-field project-name" type="text" placeholder="Nome do seu projeto">
-                        </li>
-                        <li class="project-item">
-                            <input class="input-field project-description" type="text"
-                                placeholder="Descrição do seu projeto">
-                        </li>
-                    </ul>
-                </div>
+        <div class="project-data">
+            <div class="project-data-fields">
+                <h3 class="menu-header project">Seu Projeto</h3>
+                <ul class="project-fields">
+                    <li class="project-item">
+                        <input class="input-field project-name" type="text" placeholder="Nome do seu projeto">
+                    </li>
+                    <li class="project-item">
+                        <input class="input-field project-description" type="text"
+                            placeholder="Descrição do seu projeto">
+                    </li>
+                </ul>
+            </div>
 
-                <div class="personalize">
-                    <h3 class="menu-header select-title">Personalização</h3>
+            <div class="personalize">
+                <h3 class="menu-header select-title">Personalização</h3>
+                <div class="select-class">
                     <select class="select-input">
                         <option>JavaScript</option>
                         <option>HTML</option>
                         <option>CSS</option>
                     </select>
-                    <input class="input-field color-picker" type="color" value="#6BD1FF">
                 </div>
+                <input class="input-field color-picker" type="color" value="#6BD1FF">
+            </div>
 
-                <div class="submit-button">
-                    <button>Salvar Projeto</button>
-                </div>
+            <div class="submit-button">
+                <button>Salvar Projeto</button>
             </div>
         </div>
     </main>

@@ -3,10 +3,6 @@ body {
     font-family: Inter;
     font-size: 16px;
     font-weight: normal;
-}
-
-header {
-    max-width: 100%;
     margin: 0 32px;
 }
 
@@ -18,18 +14,16 @@ header {
 }
 
 .logo {
-    height: 34.05px;
+    margin-right: 45px;
 }
 
 .input-bar {
     height: 56px;
-    width: 45%;
-    min-width: 168px;
+    width: 50%;
     border: none;
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.16);
-    margin: 0 5px;
-    margin-right: 78px;
+    margin: 0 15px;
 }
 
 .input-bar::placeholder{
@@ -40,37 +34,33 @@ header {
 
 .author{
     display: flex;
+    justify-content: flex-end;
     align-items: center;
+    width: 272px;
 }
 
 .author-picture {
-    flex:none;
     width: 32px;
     height: 32px;
     border-radius: 50%;
 }
 
 .author-name {
-    flex: none;
     width: 42px;
     padding: 0px 0px 0px 12px;
     color: #FFFFFF;
 }
 
-.main-container {
+main {
     display: flex;
     justify-content: space-between;
-    margin: 0 32px;
 }
 
 .menu {
-    display: flex;
-    flex-direction: column;
+    width: 190px;
 }
 
 .menu-header {
-    display: flex;
-    align-items: center;
     font-size: 12px;
     letter-spacing: 0.4em;
     color: #FFFFFF;
@@ -83,40 +73,40 @@ header {
     align-items: center;
 }
 
-.icon-background{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 48px;
-    width: 48px;
+.icon {
+    border: 12.8px solid #5081FB;
+    display: inline-block;
     background-color: #5081FB;
-    border-radius: 16px;
+    border-radius: 13px;
     margin: 16px 16px 0 0;
 }
 
 a {
+    margin-top: 16px;
     text-decoration: none;
     color: #FFF;
-    align-items: center;
-    padding-top: 16px;
 }
 
-.code-area{
-    display: flex;
-    flex-direction: column;
+.code-area {
     width: 50%;
+    margin: 0 15px;
+}
+
+.code-editor-background{
+    background: #000;
+    margin: 0 25px;
+    border-radius: 8px;
 }
 
 .text-field{
-    position: relative;
-    width: 90%;
     height: 270px;
-    border-top: 32px solid black;
-    border-left: 10px solid black;
-    padding: 0 0 0 0;
     background: rgb(0, 0, 0);
-    border-radius: 8px;
-    color: white;
+    border: none;
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    color: #FFF;
+    width: 90%;
+    padding-left: 15px;
 }
 
 .text-field:focus{
@@ -125,30 +115,25 @@ a {
 
 .border-text-field{
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-    width: 91%;
+    flex-direction: column;
+    justify-content: center;
     height: 344px;
-    margin-left: 67px;
     border-radius: 8px;
     background: #6BD1FF;
-    position: relative;
 }
 
 .dots{
     display: flex;
-    position: absolute;
-    width: 52px;
-    top: 32px;
-    left: 32px;
     justify-content: space-between;
+    margin: 12PX;
+    width: 52px;
 }
 
 .syntax-highlight-button button{
     height: 56px;
-    width: 91.3%;
-    margin-left: 67px;
-    margin-top: 32px;
+    width: 100%;
+    margin-top: 16px;
+    letter-spacing: 0.1em;
     background: rgba(80, 129, 251, 0.08);
     border-radius: 8px;
     border: none;
@@ -178,16 +163,12 @@ a {
 .project-data{
     display: flex;
     flex-direction: column;
-    margin-left: 15px;
-}
-
-.project-data-fields{
-
+    justify-content: flex-end;
+    width: 272px;
 }
 
 .project-item{
     text-decoration: none;
-    align-items: center;
     padding-top: 16px;
 }
 
@@ -200,10 +181,10 @@ a {
     border-style: none;
     height: 56px;
     width: 100%;
-    color: #FFF;
+    color: rgba(255, 255, 255, 0.60);
     padding-left: 10px;
-    background: rgba(255, 255, 255, 0.16);
     margin-top: 16px;
+    background: rgba(255, 255, 255, 0.16);
 }
 
 select option {
@@ -218,14 +199,17 @@ select option {
 
 .submit-button button{
     height: 56px;
-    width: 272px;
-    margin-top: 32px;
+    width: 100%;
+    font-weight: bold;
+    letter-spacing: 0.2em;
+    text-transform: uppercase;
     background: #5081FB;
     border: none;
     border-radius: 8px;
     font-size: 16px;
     font-family: Inter;
-    color: #051D3B;
+    color: #051d3b;
+    margin-top: 16px;
 }
 
 
