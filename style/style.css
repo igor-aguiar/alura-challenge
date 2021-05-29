@@ -14,7 +14,7 @@ body {
 }
 
 .logo {
-    margin-right: 45px;
+    margin-right: 55px;
 }
 
 .input-bar {
@@ -24,19 +24,28 @@ body {
     border-radius: 8px;
     background-color: rgba(255, 255, 255, 0.16);
     margin: 0 15px;
+    color: #FFF;
+    padding-left: 10px;
 }
 
 .input-bar::placeholder{
-    padding-left: 10px;
     color: #FFFFFF;
     opacity: 0.64;
+}
+
+.input-bar:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.input-bar:focus{
+    background-color: rgba(255, 255, 255, 0.24);
 }
 
 .author{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    width: 272px;
+    width: 280px;
 }
 
 .author-picture {
@@ -57,7 +66,8 @@ main {
 }
 
 .menu {
-    width: 190px;
+    width: 200px;
+    
 }
 
 .menu-header {
@@ -71,6 +81,16 @@ main {
 .menu-item {
     display: flex;
     align-items: center;
+    opacity: 0.16;
+    margin-right: 10px;
+}
+
+.menu-item:hover{
+    opacity: 0.64;
+}
+
+.menu-item:active {
+    opacity: 1;
 }
 
 .icon {
@@ -82,7 +102,8 @@ main {
 }
 
 a {
-    margin-top: 16px;
+    display: inline;
+    margin: 16px 0 0 0;
     text-decoration: none;
     color: #FFF;
 }
@@ -96,6 +117,7 @@ a {
     background: #000;
     margin: 0 25px;
     border-radius: 8px;
+    box-shadow: 0 16px 24px 0 rgba(0, 0, 0,0.60);
 }
 
 .text-field{
@@ -107,6 +129,7 @@ a {
     color: #FFF;
     width: 90%;
     padding-left: 15px;
+    resize: none;
 }
 
 .text-field:focus{
@@ -117,7 +140,7 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    height: 344px;
+    height: 350px;
     border-radius: 8px;
     background: #6BD1FF;
 }
@@ -142,12 +165,34 @@ a {
     color: #FFFFFF;
 }
 
+.syntax-highlight-button button:active{
+    border: 4px solid rgba(80, 129, 251, 0.24);
+}
+
+.syntax-highlight-button button:hover{
+    box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.274);
+    transition: 100ms;
+}
+
 .input-field{
     background-color: rgba(255, 255, 255, 0.16);
     border-radius: 8px;
     border-style: none;
     height: 56px;
     width: 100%;
+    color: #FFF;
+    padding-left: 10px;
+}
+
+.input-field:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+    transform: perspective(2px)
+}
+
+.input-field:focus{
+    outline: 2px solid #5081FB;
+    outline-offset: -1px;
+    background-color: rgba(255, 255, 255, 0.24);
 }
 
 .project-description{
@@ -155,7 +200,6 @@ a {
 }
 
 .input-field::placeholder{
-    padding-left: 10px;
     color: #FFFFFF;
     opacity: 0.64;
 }
@@ -187,6 +231,16 @@ a {
     background: rgba(255, 255, 255, 0.16);
 }
 
+.select-input:hover{
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
+.select-input:focus{
+    outline: 2px solid #5081FB;
+    outline-offset: -1px;
+    background-color: rgba(255, 255, 255, 0.24);
+}
+
 select option {
     background: rgba(255, 255, 255, 0.16) !important;
     color: #051d3b;
@@ -212,6 +266,75 @@ select option {
     margin-top: 16px;
 }
 
+.submit-button button:hover {
+    background: #7BA4FC;
+    box-shadow: 6px 6px 0 0 rgba(0, 0, 0, 0.274);
+    transition: 100ms;
+}
+
+.submit-button button:active {
+    border: 4px solid rgba(80, 129, 251, 0.72);
+}
+
+.burguer-menu{
+    display: none;
+    width: 280px;
+}
+
+.magnifier {
+    display: none;
+}
+
+@media screen and (max-width: 940px){
+    .author{
+        display: none;
+    }
+
+    .burguer-menu{
+        display: flex;
+        justify-content: flex-end;
+    }
+}
+
+@media screen and (max-width: 600px){
+    .magnifier{
+        display: flex;
+        justify-content: center;
+        margin-right: 15px;
+    }
+
+    .input-bar{
+        display: none;
+        justify-content: flex-end;
+        
+    }
+
+    .menu {
+        display: none;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .code-area{
+        width: auto;
+    }
+
+    .project-data{
+        width: auto;
+        margin: 16px 0 0 0;
+    }
+
+    .input-field{
+        width: 95%;
+    }
+
+    .color-picker {
+        width: 100%;
+    }
+}
 
 
 
